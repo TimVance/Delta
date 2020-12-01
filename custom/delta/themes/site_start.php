@@ -32,18 +32,8 @@ if(! defined("DIAFAN"))
     <insert name="show_include" file="header">
 
 	<main class="page-main">
-		<!-- page content -->
-		<section class="promo">
-			<div class="container">
-				<div class="promo__grid">
-					<div class="promo__content">
-						<p class="promo__title">Аренда спецтехники</p>
-						<p class="promo__description">Обратившись к нам, вы обеспечите себя надежным исполнителем с исправной техникой на различные арендные сроки и по выгодным для вас ценам. различные арендные сроки и по выгодным для вас.</p>
-					</div>
-					<img class="promo__thumbnail" src="<insert name="custom">img/data/pic-promo.png" alt="" width="912" height="728">
-				</div>
-			</div>
-		</section>
+
+        <insert name="show_block" module="bs" cat_id="3" count="1" template="promo"></insert>
 
 		<section class="choice-technique">
 			<div class="container">
