@@ -305,56 +305,7 @@ if(! defined("DIAFAN"))
 					<h2 class="section-title">Выполненные проекты</h2>
 					<p>Опишите вашу задачу и наши специалисты <br>проконсультируют вас по всем повпросам </p>
 				</header>
-				<ul class="js--default gallery grid-layout">
-					<li class="gallery-item grid-layout__item grid-layout__item--four">
-						<a href="#" class="gallery-item__thumbnail-wrapper">
-							<img class="gallery-item__thumbnail" src="<insert name="custom">img/data/pic-gall-1.jpg" alt="" width="270" height="250">
-						</a>
-						<a href="#" class="gallery-item__description">Опишите вашу задачу и наши специалисты</a>
-					</li>
-					<li class="gallery-item grid-layout__item grid-layout__item--four">
-						<a href="#" class="gallery-item__thumbnail-wrapper">
-							<img class="gallery-item__thumbnail" src="<insert name="custom">img/data/pic-gall-2.jpg" alt="" width="270" height="250">
-						</a>
-						<a href="#" class="gallery-item__description">Опишите вашу задачу и наши специалисты</a>
-					</li>
-					<li class="gallery-item grid-layout__item grid-layout__item--four">
-						<a href="#" class="gallery-item__thumbnail-wrapper">
-							<img class="gallery-item__thumbnail" src="<insert name="custom">img/data/pic-gall-3.jpg" alt="" width="270" height="250">
-						</a>
-						<a href="#" class="gallery-item__description">Опишите вашу задачу и наши специалисты</a>
-					</li>
-					<li class="gallery-item grid-layout__item grid-layout__item--four">
-						<a href="#" class="gallery-item__thumbnail-wrapper">
-							<img class="gallery-item__thumbnail" src="<insert name="custom">img/data/pic-gall-4.jpg" alt="" width="270" height="250">
-						</a>
-						<a href="#" class="gallery-item__description">Опишите вашу задачу и наши специалисты</a>
-					</li>
-					<li class="gallery-item grid-layout__item grid-layout__item--four">
-						<a href="#" class="gallery-item__thumbnail-wrapper">
-							<img class="gallery-item__thumbnail" src="<insert name="custom">img/data/pic-gall-1.jpg" alt="" width="270" height="250">
-						</a>
-						<a href="#" class="gallery-item__description">Опишите вашу задачу и наши специалисты</a>
-					</li>
-					<li class="gallery-item grid-layout__item grid-layout__item--four">
-						<a href="#" class="gallery-item__thumbnail-wrapper">
-							<img class="gallery-item__thumbnail" src="<insert name="custom">img/data/pic-gall-2.jpg" alt="" width="270" height="250">
-						</a>
-						<a href="#" class="gallery-item__description">Опишите вашу задачу и наши специалисты</a>
-					</li>
-					<li class="gallery-item grid-layout__item grid-layout__item--four">
-						<a href="#" class="gallery-item__thumbnail-wrapper">
-							<img class="gallery-item__thumbnail" src="<insert name="custom">img/data/pic-gall-3.jpg" alt="" width="270" height="250">
-						</a>
-						<a href="#" class="gallery-item__description">Опишите вашу задачу и наши специалисты</a>
-					</li>
-					<li class="gallery-item grid-layout__item grid-layout__item--four">
-						<a href="#" class="gallery-item__thumbnail-wrapper">
-							<img class="gallery-item__thumbnail" src="<insert name="custom">img/data/pic-gall-4.jpg" alt="" width="270" height="250">
-						</a>
-						<a href="#" class="gallery-item__description">Опишите вашу задачу и наши специалисты</a>
-					</li>
-				</ul>
+                <insert name="show_block" count="8" module="ab" site_id="163" template="projects" images="1"></insert>
 			</section>
 		</div>
 
