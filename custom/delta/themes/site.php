@@ -32,9 +32,16 @@ if(! defined("DIAFAN"))
     <insert name="show_include" file="header">
 
         <main class="page-main">
-            <div class="container">
-                <insert name="show_body"></insert>
-            </div>
+            <section class="breadcrumbs">
+                <div class="container">
+                    <insert name="show_breadcrumb"></insert>
+                </div>
+            </section>
+            <section class="section-content">
+                <div class="container">
+                    <insert name="show_body"></insert>
+                </div>
+            </section>
         </main>
 
         <insert name="show_include" file="footer"></insert>
