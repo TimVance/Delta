@@ -298,28 +298,7 @@ if(! defined("DIAFAN"))
 		</section>
 
 		<div class="container">
-			<ul class="advantages grid-layout">
-				<li class="advantages-item grid-layout__item grid-layout__item--four">
-					<p class="advantages-item__label">10</p>
-					<img class="advantages-item__icon" src="<insert name="custom">img/ico-advantages-1.svg" alt="">
-					<p class="advantages-item__description">На рынке</p>
-				</li>
-				<li class="advantages-item grid-layout__item grid-layout__item--four">
-					<p class="advantages-item__label">847</p>
-					<img class="advantages-item__icon" src="<insert name="custom">img/ico-advantages-2.svg" alt="">
-					<p class="advantages-item__description">Сданных проектов</p>
-				</li>
-				<li class="advantages-item grid-layout__item grid-layout__item--four">
-					<p class="advantages-item__label">99%</p>
-					<img class="advantages-item__icon" src="<insert name="custom">img/ico-advantages-3.svg" alt="">
-					<p class="advantages-item__description">Успешных проектов</p>
-				</li>
-				<li class="advantages-item grid-layout__item grid-layout__item--four">
-					<p class="advantages-item__label">100+</p>
-					<img class="advantages-item__icon" src="<insert name="custom">img/ico-advantages-4.svg" alt="">
-					<p class="advantages-item__description">Единиц техники</p>
-				</li>
-			</ul>
+            <insert name="show_block" module="bs" cat_id="4" count="4" template="adv"></insert>
 
 			<section class="projects">
 				<header class="section-header">

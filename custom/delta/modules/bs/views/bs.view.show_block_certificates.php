@@ -30,16 +30,7 @@ if (empty($result))
 	return false;
 }               
 
-if(! isset($GLOBALS['include_bs_js']))
-{
-	$GLOBALS['include_bs_js'] = true;
-	//скрытая форма для отправки статистики по кликам
-	echo '<form method="POST" enctype="multipart/form-data" action="" class="ajax js_bs_form bs_form">
-	<input type="hidden" name="module" value="bs">
-	<input type="hidden" name="action" value="click">
-	<input type="hidden" name="banner_id" value="0">
-	</form>';
-}
+
 echo '<div class="js--certificates certificates__list carousel">';
 foreach ($result as $row)
 {

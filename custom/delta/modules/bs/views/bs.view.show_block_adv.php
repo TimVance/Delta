@@ -28,19 +28,16 @@ if (! defined('DIAFAN'))
 if (empty($result))
 {
 	return false;
-}               
-
-echo '<div class="js--partners partners__list carousel">';
-foreach ($result as $row)
-{
-	
-	//вывод баннера в виде изображения
-	if (! empty($row['image']))
-	{
-	    echo '<div class="partners__item carousel__item">';
-		    echo '<img class="partners__thumbnail" width="170" height="122" src="'.BASE_PATH.USERFILES.'/bs/'.$row['image'].'" alt="'.(! empty($row['alt']) ? $row['alt'] : '').'" title="'.(! empty($row['title']) ? $row['title'] : '').'">';
-	    echo '</div>';
-	}
-	
 }
-echo '</div>';
+?>
+
+
+<ul class="advantages grid-layout">
+    <? foreach ($result as $row) { ?>
+        <li class="advantages-item grid-layout__item grid-layout__item--four">
+            <p class="advantages-item__label"><?=strip_tags($row["text"])?></p>
+            <img class="advantages-item__icon" src="<?=$row['html']?>" alt="<?=strip_tags($row["name"])?>">
+            <p class="advantages-item__description"><?=strip_tags($row["name"])?></p>
+        </li>
+    <? } ?>
+</ul>
