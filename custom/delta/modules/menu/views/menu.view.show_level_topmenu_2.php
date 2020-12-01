@@ -27,28 +27,31 @@ if (empty($result["rows"][$result["parent_id"]]))
 }
 
 // начало уровня меню
-echo '<ul class="menu">';
+echo '
+    <div class="sub-menu__wrapper">
+        <div class="container">';
+echo '<ul class="sub-menu">';
 foreach ($result["rows"][$result["parent_id"]] as $row)
 {
 	if ($row["active"])
 	{
 		// начало пункта меню для текущей страницы
-		echo '<li>';
+		echo '<li class="sub-menu__item">';
 	}
 	elseif ($row["active_child"])
 	{
 		// начало пункта меню для активного дочернего пункта
-		echo '<li>';
+		echo '<li class="sub-menu__item">';
 	}
 	elseif ($row["children"])
 	{
 		// начало пункта меню для элемента -родителя
-		echo ' <li>';
+		echo ' <li class="sub-menu__item">';
 	}
 	else
 	{
 		// начало любого другого пункта меню
-		echo '<li>';
+		echo '<li class="sub-menu__item">';
 	}
 
 	if (
@@ -126,3 +129,5 @@ foreach ($result["rows"][$result["parent_id"]] as $row)
 }
 // окончание уровня меню
 echo '</ul>';
+echo '</div>';
+echo '</div>';

@@ -33,22 +33,22 @@ foreach ($result["rows"][$result["parent_id"]] as $row)
 	if ($row["active"])
 	{
 		// начало пункта меню для текущей страницы
-		echo '<li class="active">';
+		echo '<li class="active main-menu__item">';
 	}
 	elseif ($row["active_child"])
 	{
 		// начало пункта меню для активного дочернего пункта
-		echo ' <li class="parent active">';
+		echo ' <li class="main-menu__item main-menu__item--has-child">';
 	}
 	elseif ($row["children"])
 	{
 		// начало пункта меню для элемента -родителя
-		echo ' <li class="parent">';
+		echo ' <li class="main-menu__item main-menu__item--has-child">';
 	}
 	else
 	{
 		// начало любого другого пункта меню
-		echo '<li>';
+		echo '<li class="main-menu__item">';
 	}
 
 	if (
