@@ -22,7 +22,7 @@ if(! defined("DIAFAN"))
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
     <insert name="show_head"></insert>
-    <insert name="show_css" files="style.min.css"></insert>
+    <insert name="show_css" files="style.min.css, custom.css"></insert>
     <link rel="shortcut icon" href="/<insert name="custom">img/pic-logo.png" type="image/x-icon">
 </head>
 
@@ -396,37 +396,7 @@ if(! defined("DIAFAN"))
 						<h2 class="section-title">Не знаете какая техника вам нужна?</h2>
 						<p>Наши специалисты проконсультируют вас по всем вопросам </p>
 					</div>
-					<div class="request__form">
-						<form action="#">
-							<div class="form">
-								<p class="form-item">
-									<label class="form-label" for="person">Контактное лицо</label>
-									<input id="person" class="form-field" type="text" placeholder="Ф.И.О">
-								</p>
-								<p class="form-item">
-									<label class="form-label" for="phone">Телефон</label>
-									<input id="phone" class="form-field" type="tel" placeholder="+7(___)___-__-__ ">
-								</p>
-								<p class="form-item">
-									<label class="form-label" for="email">Ваш Email</label>
-									<input id="email" class="form-field" type="text" placeholder="mail@mail.ru">
-								</p>
-								<p class="form-item">
-									<label class="form-label" for="comment">Доп.информация</label>
-									<input id="comment" class="form-field" type="text" placeholder="Какие задачи требуют решения?">
-								</p>
-								<img class="capcha" src="<insert name="custom">img/pic-captcha.jpg" alt="">
-								<button class="form-submit button" type="submit">Получить консультацию</button>
-								<p class="form-item form-item--confirm">
-                    <span class="form-checkbox">
-                      <input id="confirm" class="visually-hidden" type="checkbox">
-                      <label class="form-checkbox__label" for="confirm"></label>
-                    </span>
-									Нажимая на кнопку вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
-								</p>
-							</div>
-						</form>
-					</div>
+                    <insert name="show_form" module="feedback" site_id="161" template="consult"></insert>
 				</div>
 			</div>
 		</section>

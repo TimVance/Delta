@@ -1,0 +1,17 @@
+.privacy_field {
+    font-size: 11px;
+    line-height: 1.2;
+    color: #777;
+}
+
+.error_message {
+    font-size: 12px;
+    line-height: 1.2;
+    color: #774848;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+.button {
+    cursor: pointer;
+}
