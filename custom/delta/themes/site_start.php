@@ -87,56 +87,7 @@ if(! defined("DIAFAN"))
 					<h2 class="section-title"><insert value="Наши услуги"></insert></h2>
                     <div><insert name="show_block" module="site" id="3"></insert></div>
 				</header>
-				<ul class="js--default our-services__list grid-layout">
-					<li class="services-item grid-layout__item grid-layout__item--four">
-						<a href="#">
-							<img src="<insert name="custom">img/data/pic-serv-1.jpg" alt="" width="270" height="200">
-							<span class="services-item__title">Шпунтовое ограждение котлована</span>
-						</a>
-					</li>
-					<li class="services-item grid-layout__item grid-layout__item--four">
-						<a href="#">
-							<img src="<insert name="custom">img/data/pic-serv-2.jpg" alt="" width="270" height="200">
-							<span class="services-item__title">Устройство буронабивных и буросекущих свай</span>
-						</a>
-					</li>
-					<li class="services-item grid-layout__item grid-layout__item--four">
-						<a href="#">
-							<img src="<insert name="custom">img/data/pic-serv-3.jpg" alt="" width="270" height="200">
-							<span class="services-item__title">Монтаж распорного крепления стен котлована</span>
-						</a>
-					</li>
-					<li class="services-item grid-layout__item grid-layout__item--four">
-						<a href="#">
-							<img src="<insert name="custom">img/data/pic-serv-4.jpg" alt="" width="270" height="200">
-							<span class="services-item__title">Монолитные работы</span>
-						</a>
-					</li>
-					<li class="services-item grid-layout__item grid-layout__item--four">
-						<a href="#">
-							<img src="<insert name="custom">img/data/pic-serv-4.jpg" alt="" width="270" height="200">
-							<span class="services-item__title">Монолитные работы</span>
-						</a>
-					</li>
-					<li class="services-item grid-layout__item grid-layout__item--four">
-						<a href="#">
-							<img src="<insert name="custom">img/data/pic-serv-2.jpg" alt="" width="270" height="200">
-							<span class="services-item__title">Устройство буронабивных и буросекущих свай</span>
-						</a>
-					</li>
-					<li class="services-item grid-layout__item grid-layout__item--four">
-						<a href="#">
-							<img src="<insert name="custom">img/data/pic-serv-3.jpg" alt="" width="270" height="200">
-							<span class="services-item__title">Монтаж распорного крепления стен котлована</span>
-						</a>
-					</li>
-					<li class="services-item grid-layout__item grid-layout__item--four">
-						<a href="#">
-							<img src="<insert name="custom">img/data/pic-serv-4.jpg" alt="" width="270" height="200">
-							<span class="services-item__title">Монолитные работы</span>
-						</a>
-					</li>
-				</ul>
+                <insert name="show_block" module="ab" site_id="164" template="mainservices" images="1" count="12"></insert>
 			</section>
 
 			<section class="certificates">
