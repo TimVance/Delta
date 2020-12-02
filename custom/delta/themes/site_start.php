@@ -48,10 +48,10 @@ if(! defined("DIAFAN"))
                 </div>
                 <header class="section-header">
                     <h2 class="section-title js-select-category-title"></h2>
-                    <p>Аренда дорожно-строительной техники <br>и спецтехники в Москве и МО</p>
+                    <div><insert name="show_block" module="site" id="5"></insert></div>
                 </header>
                 <div class="js-select-category-products"></div>
-				<a class="choice-technique__button button" href="/arenda-tekhniki/">Перейти в каталог</a>
+                <div><insert name="show_block" module="site" id="6"></insert></div>
 			</div>
 		</section>
 
@@ -62,8 +62,8 @@ if(! defined("DIAFAN"))
 
 			<section class="projects">
 				<header class="section-header">
-					<h2 class="section-title">Выполненные проекты</h2>
-					<p>Опишите вашу задачу и наши специалисты <br>проконсультируют вас по всем повпросам </p>
+					<h2 class="section-title"><insert value="Выполненные проекты"></insert></h2>
+                    <div><insert name="show_block" module="site" id="4"></insert></div>
 				</header>
                 <insert name="show_block" count="8" module="ab" site_id="163" template="projects" images="1"></insert>
 			</section>
@@ -73,8 +73,8 @@ if(! defined("DIAFAN"))
 			<div class="container">
 				<div class="request__grid">
 					<div class="request__content">
-						<h2 class="section-title">Не знаете какая техника вам нужна?</h2>
-						<p>Наши специалисты проконсультируют вас по всем вопросам </p>
+						<h2 class="section-title"><insert value="Не знаете какая техника вам нужна?"></insert></h2>
+						<div><p><insert value="Наши специалисты проконсультируют вас по всем вопросам"></insert></p></div>
 					</div>
                     <insert name="show_form" module="feedback" site_id="161" template="consult"></insert>
 				</div>
@@ -84,8 +84,8 @@ if(! defined("DIAFAN"))
 		<div class="container">
 			<section class="our-services our-services--light">
 				<header class="section-header">
-					<h2 class="section-title">Наши услуги</h2>
-					<p>Аренда дорожно-строительной техники и<br> спецтехники в Москве и МО</p>
+					<h2 class="section-title"><insert value="Наши услуги"></insert></h2>
+                    <div><insert name="show_block" module="site" id="3"></insert></div>
 				</header>
 				<ul class="js--default our-services__list grid-layout">
 					<li class="services-item grid-layout__item grid-layout__item--four">
@@ -141,10 +141,8 @@ if(! defined("DIAFAN"))
 
 			<section class="certificates">
 				<header class="section-header">
-					<h2 class="section-title">Сертификаты</h2>
-					<p>Демонтаж зданий и сооружений от 130 р. м3 <br>
-						Вам нужно избавиться от ветхого здания? Кирпичный дом пора сносить? <br>
-						Старое сооружение давно не выполняют своих функций, а производственный цех в последний раз работал лет 15-ть назад? Во всех этих случаях, если вам нужена разборка зданий и сооружений – обращайтесь. В нашей компании «МДМ СТРОЙ» вам помогут решить любую задачу – срочно, качественно, профессионально.</p>
+					<h2 class="section-title"><insert value="Сертификаты"></insert></h2>
+                    <div><insert name="show_block" module="site" id="2"></insert></div>
 				</header>
                 <insert name="show_block" module="bs" template="certificates" cat_id="2" count="99"></insert>
 				<div class="certificates__count-wrapper">
@@ -155,9 +153,7 @@ if(! defined("DIAFAN"))
 			<section class="partners">
 				<header class="section-header">
 					<h2 class="section-title"><insert value="Наши партнеры"></insert></h2>
-					<p>Демонтаж зданий и сооружений от 130 р. м3 <br>
-						Вам нужно избавиться от ветхого здания? Кирпичный дом пора сносить? <br>
-						Старое сооружение давно не выполняют своих функций, а производственный цех в последний раз работал лет 15-ть назад? Во всех этих случаях, если вам нужена разборка зданий и сооружений – обращайтесь. В нашей компании «МДМ СТРОЙ» вам помогут решить любую задачу – срочно, качественно, профессионально.</p>
+					<div><insert name="show_block" module="site" id="1"></insert></div>
 				</header>
                 <insert name="show_block" module="bs" template="partners" cat_id="1" count="99"></insert>
 			</section>

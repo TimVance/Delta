@@ -486,7 +486,7 @@ class Shop_action extends Action
     public function getProductsByCategory() {
 
         $attributes = array();
-        $count   =  99;
+        $count   =  18;
         $site_ids = "";
         $cat_ids  = explode(",", $this->diafan->filter($_POST, "int", "cat_id"));
         $brand_ids  = array();
