@@ -55,20 +55,7 @@ if(! defined("DIAFAN"))
 			</div>
 		</section>
 
-		<section class="about-firm">
-			<div class="container">
-				<div class="about-firm__grid">
-					<img class="about-firm__thumbnail" src="<insert name="custom">img/data/pic-about.png" alt="" width="852" height="669">
-					<div class="about-firm__content">
-						<h2 class="section-title">Вибропогружатели</h2>
-						<p>Дельта-М» – является поставщиком строительных услуг и аренды высокотехнологичной строительной техники, завоевавшее репутацию профессионального и надежного  партнера.</p>
-						<p>Наша компания является членом саморегулируемой организации «Ассоциация «Архитектурное наследие» №СРО-С-230-07092010, выдано 09.04.2018г.</p>
-						<p>Профессионализм и высокий уровень квалификации специалистов «Дельта-М», подтвержденный международными сертификатами,  гарантируют высокое качество подготовки техники, ее сопровождения и обслуживания.</p>
-						<p>Компания «Дельта-М» оснащена собственной базой, строительными машинами и механизмами, ремонтным и сварочным цехом. Наш промышленный парк отвечает современным требованиям  строительного сегмента мирового рынка и состоит из машин ведущих мировых производителей – Группы компаний «Liebherr», транснациональной корпорации «Manitowoc» («GroveWorldwided»), компания Hitachi Construction Machinery, JCB Russia, PTC, MKT, PVE, ICE, Bauer.</p>
-					</div>
-				</div>
-			</div>
-		</section>
+        <insert name="show_block" cat_id="5" count="1" module="bs" template="about"></insert>
 
 		<div class="container">
             <insert name="show_block" module="bs" cat_id="4" count="4" template="adv"></insert>
