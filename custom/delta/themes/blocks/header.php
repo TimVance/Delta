@@ -16,18 +16,18 @@ if (! defined('DIAFAN'))
     <div class="container">
         <div class="page-header__wrapper">
             <a class="logo logo--header" href="/">
-                <img class="logo__picture logo__picture--header" src="<insert name="custom">img/pic-logo.png" alt="">
+                <img class="logo__picture logo__picture--header" src="/<insert name="custom">img/pic-logo.png" alt="Логотип">
                 <div class="logo__detail">
-                    <p class="logo__title">Delta-M</p>
-                    <p class="logo__description logo__description--header">Аренда спецтехники</p>
+                    <p class="logo__title"><insert value="Delta-M"></insert></p>
+                    <p class="logo__description logo__description--header"><insert value="Аренда спецтехники"></insert></insert></p>
                 </div>
             </a>
             <ul class="contacts">
-                <li class="contacts__item contacts__item--location contacts-icon contacts-icon--location">г. Москва, Цветной бульвар, <br>д. 30, стр.1, пом.I, комн.14</li>
-                <li class="contacts__item contacts__item--clock contacts-icon contacts-icon--clock">Без выходных 24/7</li>
-                <li class="contacts__item contacts__item--mail"><a class="contacts-icon contacts-icon--mail" href="mailto:info@delta-M.ru"><span class="contacts__item-label">info@delta-M.ru</span></a></li>
-                <li class="contacts__item contacts__item--phone"><a class="contacts-icon contacts-icon--phone" href="tel:+77777777777"><span class="contacts__item-label">+7(777) 777 77 77</span></a></li>
-                <li class="contacts__item contacts__item--call"><a href="#">Получить консультацию</a></li>
+                <li class="contacts__item contacts__item--location contacts-icon contacts-icon--location"><insert name="show_block" module="site" id="8"></insert></li>
+                <li class="contacts__item contacts__item--clock contacts-icon contacts-icon--clock"><insert name="show_block" module="site" id="7"></li>
+                <li class="contacts__item contacts__item--mail"><insert name="show_block" module="site" id="9"></li>
+                <li class="contacts__item contacts__item--phone"><insert name="show_block" module="site" id="10"></li>
+                <li class="contacts__item contacts__item--call"><a href="#"><insert value="Получить консультацию"></insert></a></li>
             </ul>
             <button class="js--menu-trigger menu-trigger" type="button">
         <span class="visually-hidden">
@@ -51,13 +51,6 @@ if (! defined('DIAFAN'))
             </button>
             <nav class="navigation">
                 <insert name="show_block" module="menu" template="topmenu" id="1"></insert>
-                <ul class="contacts">
-                    <li class="contacts__item contacts__item--location contacts-icon contacts-icon--location">г. Москва, Цветной бульвар, <br>д. 30, стр.1, пом.I, комн.14</li>
-                    <li class="contacts__item contacts__item--clock contacts-icon contacts-icon--clock">Без выходных 24/7</li>
-                    <li class="contacts__item contacts__item--mail"><a class="contacts-icon contacts-icon--mail" href="mailto:info@delta-M.ru"><span class="contacts__item-label">info@delta-M.ru</span></a></li>
-                    <li class="contacts__item contacts__item--phone"><a class="contacts-icon contacts-icon--phone" href="tel:+77777777777"><span class="contacts__item-label">+7(777) 777 77 77</span></a></li>
-                    <li class="contacts__item contacts__item--call"><a href="#">Получить консультацию</a></li>
-                </ul>
             </nav>
         </div>
     </div>
