@@ -27,15 +27,8 @@ if (! defined('DIAFAN'))
                     <insert name="show_category" module="shop" template="footer"></insert>
                 </div>
                 <div class="footer-item">
-                    <p class="footer-item__title">Услуги</p>
-                    <ul class="footer-menu">
-                        <li class="footer-menu__item"><a href="#">Устройство буронабивных и буросекущих свай</a></li>
-                        <li class="footer-menu__item"><a href="#">Монтаж распорного крепления стен котлована</a></li>
-                        <li class="footer-menu__item"><a href="#">Шпунтовое ограждение котлована</a></li>
-                        <li class="footer-menu__item"><a href="#">Аренда спецтехники</a></li>
-                        <li class="footer-menu__item"><a href="#">«Стена в грунте»</a></li>
-                        <li class="footer-menu__item"><a href="#">Монолитные работы</a></li>
-                    </ul>
+                    <p class="footer-item__title"><insert value="Услуги"></insert></p>
+                    <insert name="show_block" module="ab" site_id="164" template="footerservices" count="12"></insert>
                 </div>
                 <div class="footer-item">
                     <p class="footer-item__title"><insert value="Контакты"></insert></p>
