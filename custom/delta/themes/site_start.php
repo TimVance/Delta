@@ -43,49 +43,15 @@ if(! defined("DIAFAN"))
 						<path d="M5.84492 5.13425L0.162605 0.0247826C0.147757 0.011325 0.129913 0.00296172 0.111122 0.000653095C0.0923312 -0.00165553 0.073356 0.00218416 0.0563753 0.0117313C0.0393947 0.0212784 0.0250976 0.0361458 0.0151257 0.0546258C0.00515376 0.0731059 -8.8503e-05 0.0944492 1.12949e-06 0.116205L1.12024e-06 1.23794C1.11965e-06 1.30904 0.0289926 1.37725 0.0768915 1.42078L4.61468 5.49994L0.0768914 9.5791C0.027732 9.62263 1.05055e-06 9.69084 1.04996e-06 9.76194L1.04071e-06 10.8837C1.03991e-06 10.9809 0.0970592 11.0346 0.162605 10.9751L5.84492 5.86563C5.89322 5.82226 5.93229 5.76678 5.95916 5.70341C5.98603 5.64004 6 5.57046 6 5.49994C6 5.42942 5.98603 5.35984 5.95916 5.29647C5.93229 5.2331 5.89322 5.17762 5.84492 5.13425Z"></path>
 					</svg>
 				</button>
-				<ul class="horizontal-menu">
-					<li class="horizontal-menu__item">
-						<a href="#">Экскаватор-погрузчик</a>
-					</li>
-					<li class="horizontal-menu__item">
-						<a href="#">Экскаватор-гусеничный</a>
-					</li>
-					<li class="horizontal-menu__item horizontal-menu__item--has-child">
-						<a href="#">Вибро-погружатели</a>
-						<ul class="vertical-menu">
-							<li class="vertical-menu__item">
-								<a href="#">Вибропогружатели кранового типа</a>
-							</li>
-							<li class="vertical-menu__item">
-								<a href="#">Вибропогружатели с боковым захватом</a>
-							</li>
-						</ul>
-					</li>
-					<li class="horizontal-menu__item">
-						<a href="#">Буровая установка</a>
-					</li>
-					<li class="horizontal-menu__item">
-						<a href="#">Автокраны</a>
-					</li>
-					<li class="horizontal-menu__item">
-						<a href="#">Виброкатки</a>
-					</li>
-					<li class="horizontal-menu__item">
-						<a href="#">Виброкатки</a>
-					</li>
-					<li class="horizontal-menu__item">
-						<a href="#">Манипуляторы</a>
-					</li>
-					<li class="horizontal-menu__item">
-						<a href="#">Длинномеры</a>
-					</li>
-				</ul>
-				<header class="section-header">
-					<h2 class="section-title">Экскаваторы</h2>
-					<p>Аренда дорожно-строительной техники <br>и спецтехники в Москве и МО</p>
-				</header>
-                <insert name="show_block" module="shop" count="6" images="1"></insert>
-				<a class="choice-technique__button button" href="#">Перейти в каталог</a>
+                <div class="js-select-category-slider">
+                    <insert name="show_category" module="shop" template="main"></insert>
+                </div>
+                <header class="section-header">
+                    <h2 class="section-title js-select-category-title"></h2>
+                    <p>Аренда дорожно-строительной техники <br>и спецтехники в Москве и МО</p>
+                </header>
+                <div class="js-select-category-products"></div>
+				<a class="choice-technique__button button" href="/arenda-tekhniki/">Перейти в каталог</a>
 			</div>
 		</section>
 
@@ -219,8 +185,8 @@ if(! defined("DIAFAN"))
 
 
 <insert name="show_js"></insert>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" asyncsrc="<insert name="custom" path="js/main.js" absolute="true" compress="js">" charset="UTF-8"></script>
-<script type="text/javascript" asyncsrc="<insert name="custom" path="js/slick.min.js" absolute="true" compress="js">" charset="UTF-8"></script>
 <script type="text/javascript" asyncsrc="<insert name="custom" path="js/jquery.maskedinput.min.js" absolute="true" compress="js">" charset="UTF-8"></script>
 <script type="text/javascript" asyncsrc="<insert name="custom" path="js/script.js" absolute="true" compress="js">" charset="UTF-8"></script>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=d2d40e06-38ff-4ef0-9613-eaf47cbf0282&lang=ru_RU"></script>
