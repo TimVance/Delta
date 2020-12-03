@@ -27,7 +27,7 @@ if (! defined('DIAFAN'))
                 <li class="contacts__item contacts__item--clock contacts-icon contacts-icon--clock"><insert name="show_block" module="site" id="7"></li>
                 <li class="contacts__item contacts__item--mail"><insert name="show_block" module="site" id="9"></li>
                 <li class="contacts__item contacts__item--phone"><insert name="show_block" module="site" id="10"></li>
-                <li class="contacts__item contacts__item--call"><a href="#"><insert value="Получить консультацию"></insert></a></li>
+                <li class="contacts__item contacts__item--call"><a class="js--modal-trigger" href="#free-consultation"><insert value="Получить консультацию"></insert></a></li>
             </ul>
             <button class="js--menu-trigger menu-trigger" type="button">
         <span class="visually-hidden">

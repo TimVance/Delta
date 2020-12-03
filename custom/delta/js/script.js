@@ -157,6 +157,20 @@ $(function () {
         });
     }
 
+    function openModalClickConsult(element) {
+        $(element).click(function(event) {
+            const linkAnchor = $(this).attr('href');
+            const modalOverlay = $('.modal-overlay.consult');
+
+            $(linkAnchor).css('display', 'block');
+            $('body').css('overflow', 'hidden');
+            $(modalOverlay).addClass('show');
+
+            return false;
+        });
+    }
+
+    openModalClickConsult('.js--modal-trigger');
     openModalClick('.technique-item input[action="one_click"]');
     openModalClickId('.single-technique input[action="one_click"]');
 

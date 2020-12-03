@@ -57,3 +57,8 @@
     width: 600px;
     text-align: center;
 }
+
+.errors .modal__content {
+    padding: 30px 30px 20px;
+    color: #000;
+}

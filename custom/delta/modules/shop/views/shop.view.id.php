@@ -74,7 +74,7 @@ echo '<div class="shop-item-right single-technique__detail">';
         </div>
         <div class="single-technique__active">
             <?= $this->get('buy_form_id', 'shop', array("row" => $result, "result" => $result)); ?>
-            <button class="single-technique__button single-technique__button--gray button" type="button">Консультация</button>
+            <a href="#free-consultation" class="js--modal-trigger single-technique__button single-technique__button--gray button" type="button">Консультация</a>
         </div>
 </div>
 

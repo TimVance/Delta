@@ -33,7 +33,7 @@ if (! defined('DIAFAN'))
                 <div class="footer-item">
                     <p class="footer-item__title"><insert value="Контакты"></insert></p>
                     <div><insert name="show_block" module="site" id="14"></div>
-                    <a class="footer-call" href="#"><insert value="Заказать консультацию</a>"></insert>
+                    <a class="footer-call js--modal-trigger" href="#free-consultation"><insert value="Заказать консультацию</a>"></insert>
                     <ul class="footer-contacts">
                         <li class="footer-contacts__item"><insert name="show_block" module="site" id="8"></li>
                         <li class="footer-contacts__item"><insert name="show_block" module="site" id="15"></li>
@@ -55,3 +55,4 @@ if (! defined('DIAFAN'))
         </div>
     </div>
 </footer>
+<insert name="show_form" module="feedback" site_id="161" template="modalconsult"></insert>
