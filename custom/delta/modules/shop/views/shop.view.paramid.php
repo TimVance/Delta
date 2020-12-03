@@ -23,12 +23,20 @@ if (! defined('DIAFAN'))
 	include $path.'/includes/404.php';
 }
 
-echo '<table class="technique-specifications">
-        <p class="technique-item__label">'.$this->htmleditor('<insert value="Тех. характеристики:"></insert>').'</p>';
+echo '<table class="custom-table">';
+echo '
+<tr>
+    <th>'.$this->htmleditor('<insert value="№">').'</th>
+    <th>'.$this->htmleditor('<insert value="Наименование">').'</th>
+    <th>'.$this->htmleditor('<insert value="Параметры">').'</th>
+</tr>';
+
+$i = 1;
 foreach ($result["rows"] as $param)
 {
     if ($param["id"] == 6 || $param["id"] == 7) continue;
-	echo '<tr class="technique-specifications__item '.($param["type"] == 'title' ? 'shop_param_title' : '').'"><td>'.$param["name"].'</td>';
+
+	echo '<tr class="technique-specifications__item '.($param["type"] == 'title' ? 'shop_param_title' : '').'"><td>'.$i.'</td><td>'.$param["name"].'</td>';
 	if ($param["value"])
 	{
 		if($param["type"] == "attachments")
@@ -103,5 +111,6 @@ foreach ($result["rows"] as $param)
 		echo '<div class="shop_param_text">'.$param["text"].'</div>';
 	}
 	echo '</tr>';
+	$i++;
 }
 echo '</table>';

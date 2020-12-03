@@ -23,11 +23,16 @@ if (! defined('DIAFAN'))
 	include $path.'/includes/404.php';
 }
 
-echo '<table class="technique-specifications">
-        <p class="technique-item__label">'.$this->htmleditor('<insert value="Тех. характеристики:"></insert>').'</p>';
+$show_param = 6;
+
+echo '<table class="js--table-spoiler technique-specifications">';
 foreach ($result["rows"] as $param)
 {
     if ($param["id"] == 6 || $param["id"] == 7) continue;
+
+    if ($show_param > 1) $show_param--;
+    else break;
+
 	echo '<tr class="technique-specifications__item '.($param["type"] == 'title' ? 'shop_param_title' : '').'"><td>'.$param["name"].'</td>';
 	if ($param["value"])
 	{
@@ -103,5 +108,11 @@ foreach ($result["rows"] as $param)
 		echo '<div class="shop_param_text">'.$param["text"].'</div>';
 	}
 	echo '</tr>';
-}
-echo '</table>';
+}?>
+
+<tr class="technique-specifications__item">
+    <td colspan="2">
+        <a href="#tabs" class="technique-specifications__more" type="button">Смотреть все технические характеристики</a>
+    </td>
+</tr>
+</table>

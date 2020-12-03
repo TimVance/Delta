@@ -131,18 +131,34 @@ $(function () {
     // Открытие модального окна
     function openModalClick(element) {
         $(element).click(function (event) {
-            const linkAnchor = $(this).attr('href');
-            const modalOverlay = $('.modal-overlay');
+            let parent = $(this).closest("article");
+            let overlay = parent.find(".modal-overlay");
+            let modal = parent.find(".js_cart_one_click");
 
-            $(linkAnchor).css('display', 'block');
+            overlay.addClass('show');
+            modal.fadeIn();
             $('body').css('overflow', 'hidden');
-            $(modalOverlay).addClass('show');
 
             return false;
         });
     }
 
-    openModalClick('.js--modal-trigger');
+    function openModalClickId(element) {
+        $(element).click(function (event) {
+            let parent = $(this).closest(".single-technique");
+            let overlay = parent.find(".modal-overlay");
+            let modal = parent.find(".js_cart_one_click");
+
+            overlay.addClass('show');
+            modal.fadeIn();
+            $('body').css('overflow', 'hidden');
+
+            return false;
+        });
+    }
+
+    openModalClick('.technique-item input[action="one_click"]');
+    openModalClickId('.single-technique input[action="one_click"]');
 
     // Закрытие модального окна
     function closeModalWindow(trigger) {

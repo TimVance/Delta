@@ -39,11 +39,7 @@ if(! defined("DIAFAN"))
                 </div>
             </section>
 
-            <section class="section-content">
-                <div class="container">
-                    <insert name="show_body"></insert>
-                </div>
-            </section>
+            <insert name="show_body_id"></insert>
 
             <section class="request">
                 <div class="container">

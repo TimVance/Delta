@@ -45,7 +45,7 @@ foreach ($result['rows'] as $row)
 					echo '<a href="'.BASE_PATH_HREF.$img["link"].'">';
 					break;
 			}
-			echo '<img src="'.$img["src"].'" alt="'.$img["alt"].'" title="'.$img["title"].'" image_id="'.$img["id"].'" class="js_shop_img">';
+			echo '<img class="technique-item__thumbnail" width="370" height="246" src="'.$img["src"].'" alt="'.$img["alt"].'" title="'.$img["title"].'" image_id="'.$img["id"].'" class="js_shop_img">';
 			echo '</a> ';
 			if(! empty($result['search']))
 			{

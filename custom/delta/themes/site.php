@@ -22,7 +22,7 @@ if(! defined("DIAFAN"))
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <insert name="show_head"></insert>
-    <insert name="show_css" files="style.min.css"></insert>
+    <insert name="show_css" files="style.min.css, custom.css"></insert>
     <link rel="shortcut icon" href="/<insert name="custom">img/pic-logo.png" type="image/x-icon">
 </head>
 
