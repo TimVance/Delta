@@ -32,17 +32,57 @@ if(! defined("DIAFAN"))
     <insert name="show_include" file="header">
 
         <main class="page-main">
+
             <section class="breadcrumbs">
                 <div class="container">
                     <insert name="show_breadcrumb" current="true"></insert>
                 </div>
             </section>
+
             <section class="section-content">
                 <div class="container">
                     <insert name="show_body"></insert>
                 </div>
             </section>
+
+            <section class="request">
+                <div class="container">
+                    <div class="request__grid">
+                        <div class="request__content">
+                            <h2 class="section-title"><insert value="Не знаете какая техника вам нужна?"></insert></h2>
+                            <div><p><insert value="Наши специалисты проконсультируют вас по всем вопросам"></insert></p></div>
+                        </div>
+                        <insert name="show_form" module="feedback" site_id="161" template="consult"></insert>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="container">
+
+                <section class="certificates">
+                    <header class="section-header">
+                        <h2 class="section-title"><insert value="Сертификаты"></insert></h2>
+                        <div><insert name="show_block" module="site" id="2"></insert></div>
+                    </header>
+                    <insert name="show_block" module="bs" template="certificates" cat_id="2" count="99"></insert>
+                    <div class="certificates__count-wrapper">
+                        <span class="certificates__count"></span>
+                    </div>
+                </section>
+
+                <section class="partners">
+                    <header class="section-header">
+                        <h2 class="section-title"><insert value="Наши партнеры"></insert></h2>
+                        <div><insert name="show_block" module="site" id="1"></insert></div>
+                    </header>
+                    <insert name="show_block" module="bs" template="partners" cat_id="1" count="99"></insert>
+                </section>
+
+            </div>
         </main>
+
+        <section id="map" class="map"></section>
 
         <insert name="show_include" file="footer"></insert>
 
